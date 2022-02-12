@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69d686d1-33d1-423c-a5d2-1b2b0db64c0e" name="Changes" comment="second commit" />
+    <list default="true" id="69d686d1-33d1-423c-a5d2-1b2b0db64c0e" name="Changes" comment="second commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/mytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/mytest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/readcsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/readcsv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/view.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +63,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for mytest.TestFunction">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in mytest.py" />
-        <item itemvalue="Python tests.Python tests for mytest.TestFunction.test_delete_record" />
-        <item itemvalue="Python tests.Python tests for mytest.TestFunction.test_add_record" />
-        <item itemvalue="Python tests.Python tests for mytest.TestFunction" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests for mytest.TestFunction.test_add_record" />
+        <item itemvalue="Python tests.Python tests for mytest.TestFunction.test_delete_record" />
+        <item itemvalue="Python tests.Python tests for mytest.TestFunction" />
+        <item itemvalue="Python tests.Python tests in mytest.py" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644689893456</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="second commit">
+      <created>1644690033270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644690033270</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

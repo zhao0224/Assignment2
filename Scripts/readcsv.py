@@ -4,7 +4,7 @@ import pandas as pd
 
 class Data_Read_Csv:
     '''
-        Data_Read_C is created for data read from csv file
+    Data_Read_C is created for data read from csv file
     '''
 
     def __init__(self, path):

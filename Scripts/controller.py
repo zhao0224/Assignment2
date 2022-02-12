@@ -103,7 +103,7 @@ class Controller:
         another one is the new record for replacing the old record
         :param rowNum: is the primary key for table
         :param input_string: is the record that user want to update
-        :return: the whole updated list
+        :return: self.list which is the list inlcudes new record
         '''
         try:
             newContent = input_string.split(",")
@@ -119,21 +119,20 @@ class Controller:
     def delete_record(self, rowNum):
         '''
         This delete_record function is accepting primary key and remove whole line
-        :param rowNum: get from user input and indicate to
-        :return:
+        :param rowNum: get from user input and indicate which row(primary key) want to delete
+        :return: self.list which is the list updated record
         '''
         try:
             self.list.remove(self.list[rowNum])
         except:
             print("Something wrong. Table has ", len(self.list), "rows only, out of range error")
-
         return self.list
 
 
     def display(self):
         '''
-
-        :return:
+        This display function is used to print each line of the list
+        :return: result no return, directly display only
         '''
         for row in self.list:
             print(row.toString())
@@ -141,25 +140,17 @@ class Controller:
 
     def displayTempTable(self):
         '''
-
-        :return:
+        This display TempTable is used to print each line of the temp_table
+        :return: result no return, directly display only
         '''
         for row in self.temp_table:
             print(row.toString())
 
 
-    def option(self):
-        '''
-
-        :return:
-        '''
-        self.view.optionNum()
-
-
     def show_header(self):
         '''
-
-        :return:
+        This show_header is used to display hearder only when it has been called
+        :return: header list
         '''
         for name in self.header:
            return name.toList()

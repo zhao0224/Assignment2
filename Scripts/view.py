@@ -6,6 +6,9 @@ from controller import Controller
 
 class View:
     def __init__(self):
+        '''
+        This constructor is used to call methods in controller.
+        '''
         self.controller = Controller()
 
     def showMenu(self):
@@ -25,13 +28,13 @@ class View:
         print("0. exit")
 
     def optionNum(self):
+        '''
+        The optionNum function is an iterative method of communicating with the user.
+        :return: no return
+        '''
         try:
-
-            try:
-                print("enter your choice: ")
-                option = int(input(""))
-            except:
-                print("must enter an integer")
+            print("enter your choice: ")
+            option = int(input(""))
 
             if option == 1:
                 print("reload the data from the csv file")
@@ -97,10 +100,9 @@ class View:
                 exit();
 
             else:
-                print("wrong input please enter again")
-                self.showMenu()
-                self.showMenu()
+                print("wrong input please wait few seconds and reenter again")
+
         except:
-            print("Something wrong in option")
+            print("Something wrong with the option")
 
 
