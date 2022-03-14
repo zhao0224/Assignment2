@@ -1,0 +1,127 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+actor "User" as Main
+
+alt success case
+loop
+
+Main -> Controller: Main() start project
+
+Controller->View: showMenu(self)
+activate View
+Main <-- View: Display menu
+Controller->View: optionNum(self)
+deactivate View
+Main <- View: Request input option
+alt option1
+Main -> View: request option == 1
+View --> Controller: accept option == 1
+View -> Controller: read_all(self)
+activate Controller
+activate Data_Read_Csv
+Controller->Data_Read_Csv: read(self)
+Controller<--Data_Read_Csv: response data_record
+deactivate Data_Read_Csv
+Controller -> Model: request data structure
+Controller <-- Model: response data set
+Controller->Controller: init list[], store data to list[]
+Controller->Controller: init header[], store header to header[]
+deactivate Controller
+Main <-- Controller: Respond option1
+end
+
+alt option2
+Main -> View: request option == 2
+View --> Controller: accept option == 2
+View->Controller: call display(self)
+activate Controller
+deactivate Controller
+Main <-- Controller: Respond option2
+end
+
+alt option3
+Main -> View: request option == 3
+View --> Controller: accept option == 3
+View->Controller: call write_file(self)
+activate Controller
+Controller->Controller: init dataFrame []
+Controller->Controller: dataFrame.append(obj.toList())
+Controller->Controller: newFile = pd.DataFrame(dataFrame)
+Controller->Controller: newFile.to_csv('newFile.csv')
+deactivate Controller
+Main <-- Controller: Respond option3
+end
+
+alt option4
+Main -> View: request option == 4
+View -> Main: request entry rows & which rows
+Main --> View: Response row numbers to display
+View --> Controller: accept option == 4 , displayRows
+View->Controller: call show_rows(self, displayRows)
+activate Controller
+Controller->Controller: init temp_table[]
+Controller->Controller: append rows to temp_table
+View ->Controller: displayTempTable()
+deactivate Controller
+Main <-- Controller: Respond option4
+end
+
+alt option5
+Main -> View: request option == 5
+View --> Main: request input_string
+Main ->View: input new Record data(input_string)
+View --> Controller: accept option ==5, input_string
+View -> Controller: call add_record(input_string)
+activate Controller
+Controller-> Model: request data structure
+Controller <-- Model: response data set
+Controller->Controller: append to list[]
+View ->Controller: call display(self)
+deactivate Controller
+Main <-- Controller: Respond option5
+end
+
+alt option6
+Main -> View: request option == 6
+Main <- View: request rowNum input
+Main --> View: input rowNum
+Main <- View: request new record input_string
+Main -->View: input new Record data(input_string)
+View --> Controller: accept option == 6 (rowNum, input_string)
+View ->Controller: update_record(rowNum, input_string)
+activate Controller
+Model -> Controller : request data structure
+Controller <-- Model: response data set: obj
+Controller->Controller: list.remove(rowNum)
+Controller->Controller: list.insert(rowNum, obj)
+View->Controller: call display()
+deactivate Controller
+Main <-- Controller: Respond option6
+end
+
+alt option7
+Main -> View: request option==7
+Main <- View: request rowNum input
+Main --> View: Response input rowNum
+View --> Controller: accept option==7(rowNum)
+View->Controller: delete_record(rowNum)
+activate Controller
+View ->Controller: display()
+deactivate Controller
+Main <-- Controller: Respond option7
+end
+
+alt option0
+Main -> View: request option == 0
+View->Controller: exit_system(self)
+Main <-- Controller: out project
+break
+end
+end
+end loop
+else failure
+end
+
+@enduml

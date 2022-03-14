@@ -1,0 +1,75 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Main --> Controller
+Main <-- Controller
+Controller --> Model
+Controller <-- Model
+Controller <- Data_Read_Csv
+View --> Controller
+View <-- Controller
+
+class Main {
+
+con = Controller()
+con.main()
+}
+
+class Controller {
+    list = []
+    header = []
+    temp_table = []
+    __init__(self)
+    read_all(self)
+    show_rows(self, displayRows)
+    write_file(self)
+    add_record(self, input_string)
+    update_record(self, rowNum, input_string)
+    delete_record(self, rowNum)
+    exit_system(self)
+    display(self)
+    displayTempTable(self)
+    show_header(self))
+    main(self)
+}
+
+class View {
+    __init__(self)
+    showMenu(self)
+    optionNum(self)
+}
+
+class Model {
+    __init__(self, incident_number, incident_type, reported_date,
+                 nearest_populated_centre, province, company, substance, significant,
+                 what_happened_category)
+
+    get_incident_number(self)
+    set_incident_number(self, value)
+    get_incident_type(self)
+    set_incident_type(self, value)
+    get_reported_date(self)
+    set_reported_date(self, value)
+    get_nearest_populated_centre(self)
+    set_nearest_populated_centre(self, value)
+    get_province(self)
+    set_province(self, value)
+    get_company(self)
+    set_company(self, value)
+    get_substance(self)
+    set_substance(self, value)
+    get_significant(self)
+    set_significant(self, value)
+    get_what_happened_category(self)
+    set_what_happened_category(self, value)
+    toString(self)
+    toList(self)
+
+}
+
+class Data_Read_Csv{
+    __init__(self, path)
+    read(self):
+}
+
+@enduml
