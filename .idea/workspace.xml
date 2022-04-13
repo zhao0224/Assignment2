@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69d686d1-33d1-423c-a5d2-1b2b0db64c0e" name="Changes" comment="add doc to all code">
-      <change afterPath="$PROJECT_DIR$/Ass2SequenceDiagram.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class diagram.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/mytest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/newFile.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/readcsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/readcsv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +72,7 @@
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.test">
     <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,8 +193,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.controller" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.controller" />
       <item itemvalue="Python.mytest" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.view" />
@@ -269,7 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644695709718</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add doc to all code">
+      <created>1647223642379</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647223642379</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add doc to all code">
+      <created>1647223649976</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1647223649976</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,16 +312,5 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="add doc to all code" />
     <option name="LAST_COMMIT_MESSAGE" value="add doc to all code" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
